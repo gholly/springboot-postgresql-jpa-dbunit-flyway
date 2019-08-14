@@ -1,2 +1,20 @@
 server:
   port: 8080
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+    database: POSTGRESQL
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    password: 123456
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
